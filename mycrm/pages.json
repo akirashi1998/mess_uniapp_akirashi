@@ -1,0 +1,67 @@
+{
+	"pages": [{
+		"path":"pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	},{
+		"path":"pages/customer/customer",
+		"style": {
+			"navigationBarTitleText": "客户"
+		}
+	},{
+		"path":"pages/business/business",
+		"style": {
+			"navigationBarTitleText": "商机"
+		}
+	},{
+		"path":"pages/task/task",
+		"style": {
+			"navigationBarTitleText": "任务"
+		}
+	},{
+		"path":"pages/profile/profile",
+		"style": {
+			"navigationBarTitleText": "我的"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F0F0F0"
+	},
+	"tabBar":{
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/img/thisimg.png",
+				"selectedIconPath":"static/img/thisimg.png"
+			},
+			{
+				"text":"客户",
+				"pagePath":"pages/customer/customer",
+				"iconPath":"static/img/thisimg.png",
+				"selectedIconPath":"static/img/thisimg.png"
+			},
+			{
+				"text":"商机",
+				"pagePath":"pages/business/business",
+				"iconPath":"static/img/thisimg.png",
+				"selectedIconPath":"static/img/thisimg.png"
+			},
+			{
+				"text":"任务",
+				"pagePath":"pages/task/task",
+				"iconPath":"static/img/thisimg.png",
+				"selectedIconPath":"static/img/thisimg.png"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/profile/profile",
+				"iconPath":"static/img/thisimg.png",
+				"selectedIconPath":"static/img/thisimg.png"
+			}
+		]
+	}
+}
