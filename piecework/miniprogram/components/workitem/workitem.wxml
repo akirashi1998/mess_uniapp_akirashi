@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="work-item"></view>
+  <view class="work-item"></view>
+  <view class="work-item"></view>
+</view>

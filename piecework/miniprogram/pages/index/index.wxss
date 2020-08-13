@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+page {
+  background: linear-gradient(to top,#000000,#434343);
+}
+.login{
+  position: relative;
+  top: 100rpx;
+}
+.login-title{
+  font-size: 32px;
+  font-weight: 1000;
+  color:white;
+}
+.login-name{
+  margin-top: 100rpx;
+}
+.login-namet{
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+.login-namep{
+  background-color: white;
+  margin-top: 20rpx;
+  padding-left: 50rpx;
+  height: 70rpx;
+  width: 450rpx;
+  border-radius: 10rpx;
+}
+.login-passcode{
+  margin-top: 50rpx;
+}
+.login-passcodet{
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+.login-passcodep{
+  background-color: white;
+  margin-top: 20rpx;
+  padding-left: 50rpx;
+  height: 70rpx;
+  width: 450rpx;
+  border-radius: 10rpx;
+}
+.login-btn{
+  margin-top: 100rpx;
+}
+.login-help{
+  color: white;
+  position: relative;
+  top: 300rpx;
+  font-size: 20rpx;
+  text-decoration: underline;
+}

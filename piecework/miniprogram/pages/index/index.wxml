@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="login">
+    <view class="login-title">登 录</view>
+    <form>
+      <view class="login-name">
+        <view class="login-namet">工号</view>
+        <input class="login-namep" placeholder="请输入工号" type="text" bindblur="getloginname"></input>
+      </view>
+      <view class="login-passcode">
+        <view class="login-passcodet">密码</view>
+        <input class="login-passcodep" placeholder="请输入密码" type="text" bindblur="getpasscode"></input>
+      </view>
+      <button type="primary" class="login-btn" bindtap="login">
+        登录
+      </button>
+    </form>
+  </view>
+  <view class="login-help">
+    <view>还没有工号？点击这里联系管理员</view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/work/work",
+    "pages/piecework/piecework"
+  ],
+  "window": {
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#434343",
+    "navigationBarTitleText": "计件通",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/work/work",
+        "text": "工作记录"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的资料"
+      }
+    ]
+  }
+}
