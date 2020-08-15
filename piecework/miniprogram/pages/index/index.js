@@ -23,7 +23,7 @@ Page({
   login(){
     var username = this.data.loginname
     var password = this.data.loginpasscode
-    var svname,svpassword
+    var svname,svpassword //从server传回的数据相比对
     console.log(username,password)
 
     if(username == undefined || password == undefined){
@@ -48,11 +48,12 @@ Page({
           if(username == svname && password == svpassword){
             
             wx.switchTab({
-              url: '../work/work',
               success(){
                 app.globalData.username = svname
                 app.globalData.password = svpassword
-              }
+                console.log(app.globalData.username,app.globalData.password)
+              },
+              url: '../work/work'
             })
             
           }else{
@@ -66,6 +67,23 @@ Page({
       )
 
     }
+
+  },
+
+  onLoad(){
+    wx.request({
+      url: 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx53cd558ae28e1f6b&secret=5eeb350c0da65612fb356b397f782b0d',
+      success(res){
+        app.globalData.access_token = res.data.access_token
+        console.log(app.globalData.access_token)
+      }     
+    })
+
+
+
+
+
+
 
   }
 

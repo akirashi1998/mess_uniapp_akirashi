@@ -1,7 +1,0 @@
-.work-item{
-  background: linear-gradient(to bottom,#485563,#29323c);
-  width: 700rpx;
-  height: 300rpx;
-  border-radius: 50rpx;
-  margin-bottom: 50rpx;
-}

@@ -1,3 +1,20 @@
 .container{
   margin:50rpx;
 }
+.workitem{
+  width: 700rpx;
+  height: 250rpx;
+  background: linear-gradient(to bottom,#485563,#29323c);
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+
+.supervisor-menu{
+  display: flex;
+}
+.supervisor-func{
+  width: 100px;
+  height: 100px;
+  background-color: #29323c;
+}

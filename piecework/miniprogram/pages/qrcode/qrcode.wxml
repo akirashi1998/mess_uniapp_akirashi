@@ -1,0 +1,8 @@
+<!--miniprogram/pages/qrcode/qrcode.wxml-->
+<view class="container">
+  <text>员工的二维码页面</text>
+  <view class="qrcode-container">
+    <canvas canvas-id="qrcode" style="width:200px;height:200px;" class="qrcode"></canvas>
+  </view>
+</view>
+

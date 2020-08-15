@@ -1,5 +1,4 @@
 {
   "usingComponents": {
-    "work-item":"../../components/workitem/workitem"
   }
 }

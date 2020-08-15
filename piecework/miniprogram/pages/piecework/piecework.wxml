@@ -1,2 +1,18 @@
-<!--miniprogram/pages/piecework/piecework.wxml-->
-<text>miniprogram/pages/piecework/piecework.wxml</text>
+<view class="container">
+  <!-- 这是监工可以看到的页面，对员工情况进行查看和评估，目前暂时设置为完成与未完成两种状态 -->
+  <view>
+    {{workid}}
+  </view>
+  <view>
+    工作记录：{{workname}}
+  </view>
+  <view>
+    工作班次：{{worktime}}
+  </view>
+  <view>
+    完成度：{{completed}}
+  </view>
+  <view>
+    <button type="primary" bindtap="checkout">验收</button>
+  </view>
+</view>

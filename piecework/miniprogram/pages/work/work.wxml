@@ -1,5 +1,19 @@
 <view class="container">
-  <view class="worklist">
-    <work-item></work-item>
+  <view class="worklist" wx:if="{{isemploy}}">
+    <view wx:for="{{result}}" class="workitem" bindtap="toQRCode" data-index="{{index}}">
+      <view class="work-name">
+        {{result[index].workname}}
+      </view>
+      <view class="work-time">
+        {{result[index].worktime}}
+      </view>
+    </view>
+  </view>
+
+
+  <view class="worklist" wx:if="{{issupervisor}}">
+    <view class="supervisor-menu">
+      <button type="primary" bindtap="scancode">扫一扫</button>
+    </view>
   </view>
 </view>

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/profile/profile",
     "pages/work/work",
-    "pages/piecework/piecework"
+    "pages/piecework/piecework",
+    "pages/qrcode/qrcode"
   ],
   "window": {
     "backgroundColor": "#000000",
@@ -15,14 +16,19 @@
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "tabBar": {
+    "selectedColor": "#4B79A1",
     "list": [
       {
         "pagePath": "pages/work/work",
-        "text": "工作记录"
+        "text": "工作记录",
+        "iconPath": "images/icon/unright.png",
+        "selectedIconPath": "images/icon/right.png"
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "我的资料"
+        "text": "我的资料",
+        "iconPath": "images/icon/uncourse.png",
+        "selectedIconPath": "images/icon/course.png"
       }
     ]
   }

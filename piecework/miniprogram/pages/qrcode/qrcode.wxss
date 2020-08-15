@@ -1,0 +1,18 @@
+/* miniprogram/pages/qrcode/qrcode.wxss */
+.container{
+}
+
+text{
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.qrcode-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrcode{
+  
+}
