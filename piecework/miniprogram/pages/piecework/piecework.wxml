@@ -7,12 +7,12 @@
     工作记录：{{workname}}
   </view>
   <view>
-    工作班次：{{worktime}}
+    工作班次：
   </view>
   <view>
-    完成度：{{completed}}
+    完成度：{{completed == true?'已完成':'未完成'}}
   </view>
   <view>
-    <button type="primary" bindtap="checkout">验收</button>
+    <button type="primary" bindtap="checkout" disabled="{{!completed}}">验收</button>
   </view>
 </view>

@@ -85,6 +85,13 @@ Page({
 
 
 
+  },
+
+
+  contactAdmin(){
+    wx.navigateTo({
+      url: '/pages/contact/contact',
+    })
   }
 
 

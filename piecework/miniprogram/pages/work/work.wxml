@@ -1,19 +1,29 @@
 <view class="container">
   <view class="worklist" wx:if="{{isemploy}}">
-    <view wx:for="{{result}}" class="workitem" bindtap="toQRCode" data-index="{{index}}">
+    <view wx:for="{{result}}" class="workitem {{result[index].completed == true?'achieved':''}}" bindtap="toQRCode" data-index="{{index}}">
       <view class="work-name">
-        {{result[index].workname}}
+        工作记录  ： {{result[index].workname}}
       </view>
       <view class="work-time">
-        {{result[index].worktime}}
+        {{result[index].completed == true?'已完成':'进行中'}}
       </view>
+      <view wx:if="{{!result[index].completed}}" class="order"></view>
     </view>
   </view>
+</view>
 
 
   <view class="worklist" wx:if="{{issupervisor}}">
     <view class="supervisor-menu">
-      <button type="primary" bindtap="scancode">扫一扫</button>
+      <view bindtap="employlist">员工名单</view>
+      <view type="primary" bindtap="scancode">扫一扫</view>
+      <view bindtap="uncompletedlist">进行中</view>
+      <view bindtap="completedlist">已完成</view>
+    </view>    
+    <view class="supervisor-menu">
+      <view bindtap="employlist">员工名单</view>
+      <view type="primary" bindtap="scancode">扫一扫</view>
+      <view bindtap="uncompletedlist">进行中</view>
+      <view bindtap="completedlist">已完成</view>
     </view>
   </view>
-</view>

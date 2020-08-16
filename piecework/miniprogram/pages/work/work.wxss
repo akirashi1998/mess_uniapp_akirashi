@@ -4,17 +4,57 @@
 .workitem{
   width: 700rpx;
   height: 250rpx;
-  background: linear-gradient(to bottom,#485563,#29323c);
+  background: linear-gradient(to bottom,#787878,#434343);
   border-radius: 20rpx;
   margin-bottom: 30rpx;
+  padding-left: 20rpx;
+  line-height: 125rpx;
 }
-
+.work-name{
+  color: white;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+.work-time{
+  color: white;
+  display: inline-block;
+}
 
 .supervisor-menu{
   display: flex;
 }
+
+.supervisor-menu view{
+  flex: 1;
+  border: 2rpx solid;
+  height: 180rpx;
+}
+
 .supervisor-func{
   width: 100px;
   height: 100px;
   background-color: #29323c;
 }
+.achieved{
+  height: 100rpx;
+  background: linear-gradient(to bottom,#434343,#333333);
+  line-height: 100rpx;
+}
+
+.achieved .work-time{
+  margin-left: 50rpx;
+  color: gold;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.achieved .work-name{
+  display: inline-block;
+}
+
+.order{
+  display: inline-block;
+}
+
+
+

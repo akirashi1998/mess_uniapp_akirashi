@@ -1,10 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/profile/profile",
     "pages/work/work",
+    "pages/profile/profile",
     "pages/piecework/piecework",
-    "pages/qrcode/qrcode"
+    "pages/qrcode/qrcode",
+    "pages/contact/contact",
+    "pages/details/details",
+    "pages/settings/settings"
   ],
   "window": {
     "backgroundColor": "#000000",

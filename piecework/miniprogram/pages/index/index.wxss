@@ -47,10 +47,13 @@ page {
 .login-btn{
   margin-top: 100rpx;
 }
-.login-help{
+.login-help button{
   color: white;
   position: relative;
   top: 300rpx;
   font-size: 20rpx;
   text-decoration: underline;
+}
+.login-help button:hover{
+  background-color: #434343;
 }

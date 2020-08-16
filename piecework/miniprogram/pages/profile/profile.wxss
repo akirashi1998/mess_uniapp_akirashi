@@ -1,1 +1,50 @@
 /* miniprogram/pages/profile/profile.wxss */
+.container{
+}
+
+.profile{
+  height: 900rpx;
+  width: 650rpx;
+  margin-top: 150rpx;
+  border-radius: 50rpx;
+  background: linear-gradient(to bottom,#434343,#333333);
+  box-shadow: 5rpx 5rpx 2rpx 2rpx #bbbbbb;
+}
+
+.avatar{
+  height: 200rpx;
+  width: 200rpx;
+  border: 5rpx solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: -100rpx;
+  left: 50rpx;
+  display: inline-block;
+}
+
+.nickname{
+  display: inline-block;
+  color: white;
+  width: 300rpx;
+  font-weight: 1000;
+  font-size: 16px;
+  word-wrap: break-word;
+  position: absolute;
+  top: 220rpx;
+  left: 350rpx;
+}
+
+.item{
+   width: 550rpx;
+   height: 100rpx;
+   background-color: #0083B0;
+   border-bottom: 10rpx solid white;
+   margin-bottom: 50rpx;
+   color: white;
+   font-weight: 500;
+   font-size: 36rpx;
+   line-height: 100rpx;
+   padding-left: 20rpx;
+   text-align: center;
+}

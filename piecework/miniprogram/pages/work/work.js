@@ -20,6 +20,7 @@ Page({
           result:res.data
         })
 
+
         console.log("当前globaldata的值为",app.globalData.username)
         if(res.data[0].administ == "administ"){
           this.setData({
@@ -53,9 +54,50 @@ Page({
     var worktime = this.data.result[index].worktime
     var completed = this.data.result[index].completed
     var workid = this.data.result[index]._id
-    wx.navigateTo({
-      url: '../qrcode/qrcode?workname='+workname+'&worktime='+worktime+'&completed='+completed+'&workid='+workid
+    var workamount = this.data.result[index].workamount
+    var price = this.data.result[index].price
+    var order =  this.data.result[index].order
+    var _date = String(worktime)
+    var day = _date.split(" ")
+    console.log("这是切割日期的测试",day)
+    var _year = day[3] + "年"
+    var _month = day[1]
+    var monthstr = ["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    for(let i = 1;i<monthstr.length;i++){
+      if(_month == monthstr[i]){
+        _month = String(i) + "月"
+      }
+    }
+    var _day = day[2] + "日"
+
+    console.log(price,workamount)
+    this.setData({
+      workname,
+      worktime,
+      completed,
+      workid,
+      workamount,
+      price,
+      order,
+      _year,
+      _month,
+      _day
     })
+
+    app.globalData.currentname = workname
+    app.globalData.currenttime = worktime
+    app.globalData.currentcompleted = completed
+    app.globalData.currentid = workid
+    app.globalData.workamount = workamount
+    app.globalData.price = price
+    app.globalData.order = order
+    app.globalData._day = _day
+    app.globalData._month = _month
+    app.globalData._year = _year
+    wx.navigateTo({
+      url: '../qrcode/qrcode?workname='+app.globalData.currentname+'&worktime='+app.globalData.currenttime+'&completed='+app.globalData.currentcompleted+'&workid='+app.globalData.currentid+'&workamount='+app.globalData.workamount+'&price='+app.globalData.price+'&order='+app.globalData.order+'&_year='+app.globalData._year+'&_month='+app.globalData._month+'&_day='+app.globalData._day
+    })
+
   },
 
   scancode(){

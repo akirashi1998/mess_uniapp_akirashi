@@ -17,6 +17,6 @@
     </form>
   </view>
   <view class="login-help">
-    <view>还没有工号？点击这里联系管理员</view>
+    <button bindtap="contactAdmin">没有工号？点击联系管理员</button>
   </view>
 </view>

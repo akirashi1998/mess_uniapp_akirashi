@@ -19,12 +19,31 @@ Page({
     var worktime = options.worktime
     var completed = options.completed
     var workid = options.workid
+    var workamount = options.workamount
+    var price = options.price
+    var order = options.order
+    var _year = options._year
+    var _month = options._month
+    var _day = options._day
+
+    console.log(_month,_day)
+
+
+
     this.setData({
       workname,
       worktime,
       completed,
-      workid
+      workid,
+      workamount,
+      price,
+      order,
+      _year,
+      _month,
+      _day
     })
+
+    
   },
 
   /**

@@ -1,6 +1,7 @@
 // miniprogram/pages/piecework/piecework.js
 var db = wx.cloud.database()
 var _ = db.command
+var app = getApp()
 Page({
 
   /**
@@ -44,6 +45,32 @@ Page({
       data:{
         completed:true
       }
-    })
+    }).then(
+      res =>{
+        console.log("这是更新之后的成功数",res)
+        if(res.stats.updated > 0){
+          wx.showToast({
+            title: '工作验收成功！',
+            icon:'success'
+          })
+          this.setData({
+            completed:true
+          })
+          app.globalData.currentcompleted = true
+
+          setTimeout(()=>{
+            wx.navigateBack({
+              
+            })
+          },1000)
+        }else if(res.stats.updated == 0){
+          wx.showToast({
+            title: '该任务已验收过了',
+            icon:'loading'
+          })
+        }
+      }
+    )
+
   }
 })

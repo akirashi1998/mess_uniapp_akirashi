@@ -1,8 +1,29 @@
 <!--miniprogram/pages/qrcode/qrcode.wxml-->
 <view class="container">
-  <text>员工的二维码页面</text>
+  <text class="introduct">工作记录-扫码验收</text>
   <view class="qrcode-container">
     <canvas canvas-id="qrcode" style="width:200px;height:200px;" class="qrcode"></canvas>
+  </view>
+
+  <view class="worklist">
+    <view>
+      工作记录id ：{{workid}}
+    </view>
+    <view>
+      工作种类 ：{{workname}} 
+    </view>
+    <view>
+      工件数量 ：{{workamount}} 件
+    </view>
+    <view>
+      工件单价 ：{{price}} 元
+    </view>
+    <view>
+      工作班次 ：{{_year}}  {{_month}}  {{_day}}  {{order}}
+    </view>
+    <view>
+      是否完成 ：{{completed == true?'已完成':'未完成'}}
+    </view>
   </view>
 </view>
 

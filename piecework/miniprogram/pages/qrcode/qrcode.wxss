@@ -2,6 +2,15 @@
 .container{
 }
 
+.introduct{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 24px;
+  height: 100rpx;
+}
+
 text{
   width: 750rpx;
   height: 250rpx;
@@ -15,4 +24,18 @@ text{
 
 .qrcode{
   
+}
+
+.worklist{
+  border-top: 5rpx solid #434343;
+  margin-top: 100rpx;
+  padding-top: 100rpx;
+  height: 600rpx;
+  width: 600rpx;
+}
+
+.worklist view{
+  margin-top: 10rpx;
+  font-size: 16px;
+  font-weight: 600;
 }

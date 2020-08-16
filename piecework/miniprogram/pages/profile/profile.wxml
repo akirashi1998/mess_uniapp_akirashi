@@ -1,3 +1,28 @@
-<view>
-  <view></view>
+<view class="container">
+
+  <view class="profile">
+    <view class="profile-head">
+      <view class="avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+
+      <view class="nickname">
+        <open-data type="userNickName"></open-data>
+      </view>
+
+    </view>
+
+    <view class="profile-body">
+      <view class="item">工号/账号 ：{{username}}</view>
+      <view class="item">登陆者权限 ：{{result[0]}}</view>
+      <view class="item" bindtap="todetails">资料</view>
+      <view class="item" bindtap="tosettings">设置</view>
+    </view>
+
+
+
+  </view>
+
+  <view class="username">
+  </view>
 </view>
