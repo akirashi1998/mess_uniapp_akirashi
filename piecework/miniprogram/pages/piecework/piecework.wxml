@@ -12,6 +12,7 @@
   <view>
     完成度：{{completed == true?'已完成':'未完成'}}
   </view>
+  <textarea placeholder="添加备注"></textarea>
   <view>
     <button type="primary" bindtap="checkout" disabled="{{!completed}}">验收</button>
   </view>

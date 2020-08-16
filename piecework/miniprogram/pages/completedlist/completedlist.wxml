@@ -1,3 +1,5 @@
 <view class="container">
+  <view class="banner">
+  已完成的任务</view>
   <view class="completedlist" wx:for="{{result.data}}">{{result.data[index].workname}}</view>
 </view>

@@ -1,3 +1,5 @@
-<view class="container">
+<view class="container">  
+  <view class="banner">
+  进行中的任务</view>
   <view class="uncompletedlist" wx:for="{{result.data}}">{{result.data[index].workname}}</view>
 </view>

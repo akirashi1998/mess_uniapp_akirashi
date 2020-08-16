@@ -1,1 +1,4 @@
-/* miniprogram/pages/piecework/piecework.wxss */
+.container{
+  background: #434343;
+  color: white;
+}
