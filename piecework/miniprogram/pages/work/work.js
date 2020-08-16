@@ -15,7 +15,7 @@ Page({
       name:username
     }).get().then(
       res => {
-        console.log(res.data[0])
+        console.log(res)
         this.setData({
           result:res.data
         })
@@ -112,6 +112,33 @@ Page({
       fail(res){
         console.log("failed",res)
       }
+    })
+  },
+
+
+
+  employlist(){
+
+    wx.navigateTo({
+      url: '../employlist/employlist'
+    })
+  },
+
+
+
+
+  uncompletedlist(){
+    wx.navigateTo({
+      url: '../uncompletedlist/uncompletedlist',
+    })
+  },
+
+
+
+
+  completedlist(){
+    wx.navigateTo({
+      url: '../completedlist/completedlist',
     })
   }
 

@@ -26,8 +26,12 @@
 
 .supervisor-menu view{
   flex: 1;
-  border: 2rpx solid;
+  border: 2rpx solid #29323c;
   height: 180rpx;
+  font-weight: 600;
+  background: linear-gradient(to bottom,#434343,#333333);
+  color: white;
+  padding-left: 40rpx;
 }
 
 .supervisor-func{
@@ -56,5 +60,24 @@
   display: inline-block;
 }
 
+image{
+  margin-top: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+}
+
+.boardbox{
+  display: flex;
+  margin-top: 50rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.board{
+  width: 700rpx;
+  height: 800rpx;
+  border: 2rpx solid; 
+}
 
 

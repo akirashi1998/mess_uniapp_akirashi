@@ -1,0 +1,3 @@
+<view class="container">
+  <view wx:for="{{result.data}}" class="employlist">员工工号：{{result.data[index].loginname}} \n\r\n\r\n\r\n\r 姓名 ：{{result.data[index].name}}</view>
+</view>
