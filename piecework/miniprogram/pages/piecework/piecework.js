@@ -19,7 +19,12 @@ Page({
       workname:options.workname,
       worktime:options.worktime,
       completed:options.completed,
-      workid:options.workid
+      workid:options.workid,
+      remark:options.remark,
+      _year:options._year,
+      _month:options._month,
+      _day:options._day,
+      order:options.order
     })
     console.log(options)
   },
@@ -43,7 +48,8 @@ Page({
       _id:workid
     }).update({
       data:{
-        completed:true
+        completed:true,
+        remark:this.data.remark
       }
     }).then(
       res =>{
@@ -72,5 +78,20 @@ Page({
       }
     )
 
+  },
+
+
+
+  textarea(e){
+    console.log(e.detail.value)
+
+    this.setData({
+      remark:e.detail.value
+    })
   }
+
+
+
+
+
 })

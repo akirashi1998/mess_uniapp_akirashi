@@ -36,3 +36,34 @@
   <view wx:if="{{issupervisor}}" class="boardbox">
     <view class="board">最新通知 ...</view>
   </view>
+
+  <view wx:if="{{isadminist}}">
+    <view class="supervisor-menu">
+      <view bindtap="employlist">
+      <image src="/images/icon/table.png" mode="scaleToFill"></image>
+      员工表</view>
+      <view type="primary" bindtap="scancode">
+      <image src="/images/icon/order.png" mode="scaleToFill"></image>
+      扫一扫</view>
+      <view bindtap="uncompletedlist">
+      <image src="/images/icon/planning.png" mode="scaleToFill"></image>
+      进行中</view>
+      <view bindtap="completedlist">
+      <image src="/images/icon/complete.png" mode="scaleToFill"></image>
+      已完成</view>
+    </view>
+    <view class="supervisor-menu">
+      <view bindtap="supervisorlist">
+      <image src="/images/icon/table.png" mode="scaleToFill"></image>
+      监工表</view>
+      <view type="primary" bindtap="newtask">
+      <image src="/images/icon/order.png" mode="scaleToFill"></image>
+      任务发布</view>
+      <view bindtap="modifytask">
+      <image src="/images/icon/planning.png" mode="scaleToFill"></image>
+      任务调整</view>
+      <view bindtap="newremark">
+      <image src="/images/icon/complete.png" mode="scaleToFill"></image>
+      通知</view>
+    </view>
+  </view>

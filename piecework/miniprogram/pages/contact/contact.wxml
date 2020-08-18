@@ -1,2 +1,14 @@
-<!--miniprogram/pages/contact/contact.wxml-->
-<text>miniprogram/pages/contact/contact.wxml</text>
+<view class="container">
+  <view class="contact">
+    管理员电话 
+    <view>{{phone}}</view>
+  </view>
+  <view class="contact">
+    管理员邮箱地址
+    <view>{{email}}</view>
+  </view>
+  <view class="contact">
+    公司地址
+    <view>绍兴水木湾科技园</view>
+  </view>
+</view>

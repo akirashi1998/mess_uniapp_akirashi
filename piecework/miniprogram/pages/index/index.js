@@ -5,7 +5,7 @@ const _ = db.command
 
 Page({
   data:{
-
+    
   },
   getloginname(e){
     // console.log("工号",e.detail.value)

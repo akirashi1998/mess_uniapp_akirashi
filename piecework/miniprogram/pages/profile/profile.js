@@ -33,8 +33,24 @@ Page({
         this.setData({
           result : res
         })
+
+        if(res.data[0].administ == "employ"){
+          this.setData({
+            admin:"员工"
+          })
+        }else if(res.data[0].administ == "supervisor"){
+          this.setData({
+            admin:"监工"
+          })
+        }else if(res.data[0].administ == "administ"){
+          this.setData({
+            admin:"管理员"
+          })
+        }
       }
     )
+
+ 
 
 
   },

@@ -10,7 +10,8 @@
     "pages/settings/settings",
     "pages/employlist/employlist",
     "pages/completedlist/completedlist",
-    "pages/uncompletedlist/uncompletedlist"
+    "pages/uncompletedlist/uncompletedlist",
+    "pages/employdetails/employdetails"
   ],
   "window": {
     "backgroundColor": "#000000",

@@ -25,6 +25,7 @@ Page({
     var _year = options._year
     var _month = options._month
     var _day = options._day
+    var remark = options.remark
 
     console.log(_month,_day)
 
@@ -40,7 +41,8 @@ Page({
       order,
       _year,
       _month,
-      _day
+      _day,
+      remark
     })
 
     
@@ -51,7 +53,8 @@ Page({
    */
   onReady: function (options) {
     // console.log(this.data.completed,this.data.workname)
-    var jumpurl = "/pages/piecework/piecework?workname="+this.data.workname+"&worktime="+this.data.worktime+"&completed="+this.data.completed+"&workid="+this.data.workid//绝对地址加斜杆，不然会报错，也可以从全局定义好再加入
+    var jumpurl = "/pages/piecework/piecework?workname="+this.data.workname+"&worktime="+this.data.worktime+"&completed="+this.data.completed+"&workid="+this.data.workid+"&_year="+this.data._year+"&_month="+this.data._month+"&_day="+this.data._day+"&remark="+this.data.remark+"&order="+this.data.order
+    //绝对地址加斜杆，不然会报错，也可以从全局定义好再加入
     drawQrcode({
       width:200,
       height:200,

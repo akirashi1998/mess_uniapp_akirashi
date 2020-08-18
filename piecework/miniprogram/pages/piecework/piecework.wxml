@@ -7,12 +7,12 @@
     工作记录：{{workname}}
   </view>
   <view>
-    工作班次：
+    工作班次：{{_year}} {{_month}} {{_day}} {{order}}
   </view>
   <view>
-    完成度：{{completed == true?'已完成':'未完成'}}
+    完成度：{{completed}}
   </view>
-  <textarea placeholder="添加备注"></textarea>
+  <textarea placeholder="添加备注" class="remark" bindblur="textarea" value="{{remark}}"></textarea>
   <view>
     <button type="primary" bindtap="checkout" disabled="{{!completed}}">验收</button>
   </view>

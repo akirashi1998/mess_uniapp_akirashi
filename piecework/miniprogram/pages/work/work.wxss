@@ -81,3 +81,16 @@ image{
 }
 
 
+
+.administ-menu{
+  display: flex;
+}
+.administ-menu view{
+  flex: 1;
+  border: 2rpx solid #29323c;
+  height: 180rpx;
+  font-weight: 600;
+  background: linear-gradient(to bottom,#434343,#333333);
+  color: white;
+  padding-left: 40rpx;
+}

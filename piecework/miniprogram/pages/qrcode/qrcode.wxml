@@ -22,7 +22,7 @@
       工作班次 ：{{_year}}  {{_month}}  {{_day}}  {{order}}
     </view>
     <view>
-      是否完成 ：{{completed == true?'已完成':'未完成'}}
+      是否完成 ：{{completed}}
     </view>
   </view>
 </view>

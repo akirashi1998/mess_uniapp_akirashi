@@ -1,2 +1,17 @@
-<!--miniprogram/pages/settings/settings.wxml-->
-<text>miniprogram/pages/settings/settings.wxml</text>
+
+<view class="container">
+  <view class="setting-box">
+    <view class="setting-item">
+      <view class="setting-item-content">dasd</view>
+    </view>
+    <view class="setting-item">
+      <view class="setting-item-content">dasd</view>
+    </view>
+    <view class="setting-item">
+      <view class="setting-item-content">dasd</view>
+    </view>
+    <view class="setting-item">
+      <view class="setting-item-content">dasd</view>
+    </view>
+  </view>
+</view>

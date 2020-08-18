@@ -1,6 +1,8 @@
 var app = getApp()
 const db = wx.cloud.database()
 const _ = db.command
+
+//注意：本页面中已经在data里面设置了员工的result，后面读数据库得到的结果用其他名字储存
 Page({
   data:{
     isemploy:false,
@@ -49,6 +51,7 @@ Page({
   toQRCode(e){
     // console.log(e.currentTarget.dataset.index)
     let index = e.currentTarget.dataset.index
+    
     // console.log(this.data.result[index],this.data.result[index]._id)
     var workname = this.data.result[index].workname
     var worktime = this.data.result[index].worktime
@@ -59,6 +62,7 @@ Page({
     var order =  this.data.result[index].order
     var _date = String(worktime)
     var day = _date.split(" ")
+    var remark = this.data.result[index].remark
     console.log("这是切割日期的测试",day)
     var _year = day[3] + "年"
     var _month = day[1]
@@ -81,7 +85,8 @@ Page({
       order,
       _year,
       _month,
-      _day
+      _day,
+      remark
     })
 
     app.globalData.currentname = workname
@@ -94,8 +99,9 @@ Page({
     app.globalData._day = _day
     app.globalData._month = _month
     app.globalData._year = _year
+    app.globalData.remark = remark
     wx.navigateTo({
-      url: '../qrcode/qrcode?workname='+app.globalData.currentname+'&worktime='+app.globalData.currenttime+'&completed='+app.globalData.currentcompleted+'&workid='+app.globalData.currentid+'&workamount='+app.globalData.workamount+'&price='+app.globalData.price+'&order='+app.globalData.order+'&_year='+app.globalData._year+'&_month='+app.globalData._month+'&_day='+app.globalData._day
+      url: '../qrcode/qrcode?workname='+app.globalData.currentname+'&worktime='+app.globalData.currenttime+'&completed='+app.globalData.currentcompleted+'&workid='+app.globalData.currentid+'&workamount='+app.globalData.workamount+'&price='+app.globalData.price+'&order='+app.globalData.order+'&_year='+app.globalData._year+'&_month='+app.globalData._month+'&_day='+app.globalData._day+'&remark='+app.globalData.remark
     })
 
   },
@@ -140,6 +146,24 @@ Page({
     wx.navigateTo({
       url: '../completedlist/completedlist',
     })
+  },
+
+
+  supervisorlist(){
+
+  },
+
+  newtask(){
+
+  },
+
+
+  modifytask(){
+
+  },
+
+  newremark(){
+
   }
 
 })

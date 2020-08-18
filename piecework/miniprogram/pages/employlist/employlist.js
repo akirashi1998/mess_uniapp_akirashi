@@ -16,7 +16,7 @@ Page({
           result:res
         })
 
-        console.log(res)
+        console.log("这是res",res)
       }
     )
   },
@@ -24,4 +24,14 @@ Page({
   onReady: function () {
  
   },
+
+  toemploy(e){
+    let loginname = e.currentTarget.dataset.loginname
+    let name = e.currentTarget.dataset.name
+
+
+    wx.navigateTo({
+      url: '/pages/employdetails/employdetails?loginname='+loginname+'&name='+name
+    })
+  }
 })

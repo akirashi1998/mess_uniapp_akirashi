@@ -14,7 +14,7 @@
 
     <view class="profile-body">
       <view class="item">工号/账号 ：{{username}}</view>
-      <view class="item">登陆者权限 ：{{result[0]}}</view>
+      <view class="item">登陆者权限 ：{{admin}}</view>
       <view class="item" bindtap="todetails">资料</view>
       <view class="item" bindtap="tosettings">设置</view>
     </view>
