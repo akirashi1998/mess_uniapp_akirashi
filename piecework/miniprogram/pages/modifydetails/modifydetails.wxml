@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="modifydetails">
+    <view class="name title">工种名称 <input placeholder="{{name}}" class="ipt" bindblur="getname"></input> </view>
+    <view class="amount title">工件数量 <input placeholder="{{amount}}" class="ipt" bindblur="getamount"></input> </view>
+    <view class="price title">工件价格 <input placeholder="{{price}}" class="ipt" bindblur="getprice"></input> </view>
+    <view class="whom title">指派员工 <input placeholder="{{whom}}" class="ipt" bindblur="getwhom"></input></view>
+    <view class="order title">班次 <input placeholder="{{order}}" class="ipt" bindblur="getorder"></input></view>
+    <view class="remark title">备注 <input placeholder="{{remark}}" class="ipt" bindblur="getremark"></input></view>
+  </view>
+
+  <button class="btn" type="primary" bindtap="modify">提交修改</button>
+</view>

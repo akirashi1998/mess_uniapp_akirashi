@@ -176,7 +176,9 @@ Page({
 
 
   modifytask(){
-
+    wx.navigateTo({
+      url: '/pages/modifytask/modifytask',
+    })
   },
 
   newremark(){

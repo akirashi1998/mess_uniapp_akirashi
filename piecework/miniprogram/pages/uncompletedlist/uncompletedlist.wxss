@@ -41,7 +41,11 @@
 .orderbox{
   width: 700rpx;
   height: auto;
+  position: fixed;
+  top: 250rpx;
+  left: 20rpx;
   border: 5rpx solid #434343;
+  background-color: white;
   margin-bottom: 50rpx;
 }
 

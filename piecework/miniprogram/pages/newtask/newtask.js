@@ -108,6 +108,10 @@ Page({
         }
       }).then(
         res=>{
+          wx.showToast({
+            title: '任务发布成功',
+            icon:'success'
+          })
         }
       )
     }

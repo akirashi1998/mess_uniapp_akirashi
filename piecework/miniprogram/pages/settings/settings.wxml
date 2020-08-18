@@ -2,16 +2,19 @@
 <view class="container">
   <view class="setting-box">
     <view class="setting-item">
-      <view class="setting-item-content">dasd</view>
+      <view class="setting-item-content">账户设置</view>
     </view>
     <view class="setting-item">
-      <view class="setting-item-content">dasd</view>
+      <view class="setting-item-content">通用设置</view>
     </view>
     <view class="setting-item">
-      <view class="setting-item-content">dasd</view>
+      <view class="setting-item-content">外观设置</view>
     </view>
     <view class="setting-item">
-      <view class="setting-item-content">dasd</view>
+      <view class="setting-item-content">关于</view>
     </view>
+
+
+    <button type="primary" class="btn" bindtap="logout">退出登录</button>
   </view>
 </view>

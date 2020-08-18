@@ -1,2 +1,4 @@
-<!--miniprogram/pages/details/details.wxml-->
-<text>miniprogram/pages/details/details.wxml</text>
+<view class="container">
+  <view>
+  </view>
+</view>

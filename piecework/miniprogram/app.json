@@ -15,7 +15,9 @@
     "pages/workdetails/workdetails",
     "pages/board/board",
     "pages/supervisorlist/supervisorlist",
-    "pages/newtask/newtask"
+    "pages/newtask/newtask",
+    "pages/modifytask/modifytask",
+    "pages/modifydetails/modifydetails"
   ],
   "window": {
     "backgroundColor": "#000000",

@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="banner">
+  选择要修改的任务</view>
+
+  <view class="modifylist" wx:for="{{result}}" bindtap="modify" data-index="{{index}}">
+  <view class="top">{{result[index].workname}} {{order[index]}}</view>
+  <view>工种数量 {{result[index].workamount}}  工件单价  {{result[index].price}}</view>
+  </view>
+</view>
