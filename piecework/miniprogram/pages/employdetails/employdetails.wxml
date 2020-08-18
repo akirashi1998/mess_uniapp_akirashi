@@ -3,10 +3,9 @@
   <view class="banner">
   {{loginname}}</view>
 
-  <view class="employdetails">{{loginname}}</view>
 
   <view class="workitem" wx:for="{{result.data}}">
     <view class="name">{{result.data[index].workname}}</view>
-    <view class="time">{{result.data[index].oeder}}</view>
+    <view class="time">{{workorder[index]}}</view>
   </view>
 </view>
