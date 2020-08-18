@@ -1,5 +1,14 @@
-<view class="container">  
+<view class="container">
   <view class="banner">
   进行中的任务</view>
-  <view class="uncompletedlist" wx:for="{{result.data}}">{{result.data[index].workname}}</view>
+
+  <view class="order" bindtap="selectorder">{{selectorder}}</view>
+
+  <view class="orderbox">
+    <view wx:if="{{isselected}}" class="orderlist" bindtap="originorder">请选择班次</view>
+    <view wx:if="{{isselected}}" wx:for="{{workorder}}" class="orderlist" bindtap="selorder" data-selnum="{{index}}">{{workorder[index]}}</view>
+  </view>
+  
+
+  <view class="completedlist" wx:for="{{tempres}}" bindtap="workdetails">{{tempres[index].workname}} {{temporder[index]}}</view>
 </view>

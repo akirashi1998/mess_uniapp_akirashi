@@ -45,6 +45,19 @@ Page({
         }
       }
     )
+    db.collection('others').get().then(
+      res=>{
+         this.setData({
+          board:res.data[0].board
+         }) 
+      }
+    )
+
+  },
+
+  onShow(){
+    
+
   },
 
   //点击工作清单中的某一项触发qrcode函数，进入到qrcode页面绘制二维码
@@ -150,11 +163,15 @@ Page({
 
 
   supervisorlist(){
-
+    wx.navigateTo({
+      url: '/pages/supervisorlist/supervisorlist',
+    })
   },
 
   newtask(){
-
+    wx.navigateTo({
+      url: '/pages/newtask/newtask',
+    })
   },
 
 
@@ -163,7 +180,9 @@ Page({
   },
 
   newremark(){
-
+    wx.navigateTo({
+      url: '/pages/board/board',
+    })
   }
 
 })

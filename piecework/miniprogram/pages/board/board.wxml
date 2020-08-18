@@ -1,0 +1,6 @@
+<view class="container">
+
+  <textarea class="board" placeholder="请输入新的通知内容" bindblur="board"></textarea>
+
+  <button type="primary" bindtap="newboard">发布通知</button>
+</view>

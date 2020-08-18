@@ -10,5 +10,5 @@
   </view>
   
 
-  <view class="completedlist" wx:for="{{tempres}}">{{tempres[index].workname}} {{temporder[index]}}</view>
+  <view class="completedlist" wx:for="{{tempres}}" bindtap="workdetails">{{tempres[index].workname}} {{temporder[index]}}</view>
 </view>

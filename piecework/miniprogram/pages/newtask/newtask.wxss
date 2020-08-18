@@ -1,0 +1,55 @@
+/* miniprogram/pages/newtask/newtask.wxss */
+.container{
+
+
+}
+
+.newtask{
+  width: 80%;
+  height: 80vh;
+  border: 5rpx solid #434343;
+  border-radius: 50rpx;
+  background: linear-gradient(to bottom,#434343,#333333);
+  margin-top: 6vh;
+}
+
+.box{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.ipt{
+  color: black;
+  width: 100%;
+  height: 42rpx;
+  border: 2rpx solid white;
+  background-color: white;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+}
+
+.iptx{
+  color: black;
+  width: 100%;
+  height: 88rpx;
+  border: 2rpx solid white;
+  background-color: white;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+}
+
+
+.newtaskbutton{
+  margin-top: 5vh;
+}
+
+.changeorder{
+  display: block;
+
+  position: relative;
+  top: 10rpx;
+  left: 200rpx;
+}

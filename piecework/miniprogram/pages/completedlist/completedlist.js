@@ -98,5 +98,7 @@ Page({
       temporder:workorder,
       selectorder:"请选择班次"
     })
-  }
+  },
+
+  
 })

@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="newtask">
+    <view class="box">
+      <view>工种名称 
+        <input type="text" class="ipt" bindblur="getname"></input>
+      </view>
+    </view>    
+    <view class="box">
+      <view>工种数量 
+        <input type="number" class="ipt" bindblur="getamount"></input>
+      </view>
+    </view>
+    <view class="box">
+      <view>单件价格 
+        <input type="number" class="ipt" bindblur="getprice"></input>
+      </view>
+    </view>
+    <view class="box">
+      <view>任务指派（员工工号） 
+        <input type="number" class="ipt" bindblur="getid"></input>
+      </view>
+    </view>
+    <view class="box">
+      <view>时间
+        <input type="number" class="ipt" bindblur="gettime" placeholder="如 2020-10-10 这种格式"></input>
+      </view>
+    </view>
+    <view class="box">
+      <view>班次: {{order}}
+      <button size="mini" class="changeorder" bindtap="changeorder" type="primary">班次调整</button>
+      </view>
+    </view>
+    <view class="box">
+      <view>备注
+        <input type="number" class="iptx" bindblur="getremark"></input>
+      </view>
+    </view>
+
+    <button class="newtaskbutton" type="primary" bindtap="newtask">指派任务</button>
+  </view>    
+
+  
+</view>

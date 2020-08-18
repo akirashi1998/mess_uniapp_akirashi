@@ -11,7 +11,11 @@
     "pages/employlist/employlist",
     "pages/completedlist/completedlist",
     "pages/uncompletedlist/uncompletedlist",
-    "pages/employdetails/employdetails"
+    "pages/employdetails/employdetails",
+    "pages/workdetails/workdetails",
+    "pages/board/board",
+    "pages/supervisorlist/supervisorlist",
+    "pages/newtask/newtask"
   ],
   "window": {
     "backgroundColor": "#000000",

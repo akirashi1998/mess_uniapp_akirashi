@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="banner">
+  监工表</view>
+
+  <view wx:for="{{result.data}}" class="employlist" bindtap="toemploy" data-loginname="{{result.data[index].loginname}}" data-name="{{result.data[index].name}}">监工工号：{{result.data[index].loginname}} \n\r\n\r\n\r\n\r 姓名 ：{{result.data[index].name}}</view>
+</view>

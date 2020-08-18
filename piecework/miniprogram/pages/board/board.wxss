@@ -1,0 +1,8 @@
+/* miniprogram/pages/board/board.wxss */
+.board{
+  width: 80%;
+  height: 80vh;
+  border: 5rpx solid #434343;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
